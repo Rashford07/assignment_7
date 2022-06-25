@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <h1>Simple calculator</h1>
+    <script async defer>
+      let firstMessage = Number(
+        prompt(`
+            Welcome to Simple Calculator
+
+            Which Operationswould you like to Perform?
+
+            1:Addition
+            2:Subtraction
+            3:Multiplication
+            4:Division
+
+
+
+                    `)
+      );
+      if (firstMessage === 1) {
+        let secondMessage = prompt(`
+Addition
+Enter First Number
+
+
+                    `);
+
+        if (secondMessage) {
+          let thirdMessage = prompt(`
+Enter Second Number:
+${secondMessage} +
+                        `);
+          if (thirdMessage) {
+            let fourthMessage = alert(`
+${secondMessage} + ${thirdMessage}
+
+Answer = ${Number(secondMessage) + Number(thirdMessage)}
+                `);
+            alert(`
+Thanks for using simple Calculator
+
+Want to do more calculations?
+
+RELOAD THE PAGE!!!
+                `);
+          }
+        }
+      } else if (firstMessage === 2) {
+        let secondMessage = prompt(`
+Subtraction
+Enter First Number
+
+
+                    `);
+
+        if (secondMessage) {
+          let thirdMessage = prompt(`
+Enter Second Number:
+${secondMessage} -
+                        `);
+          if (thirdMessage) {
+            let fourthMessage = alert(`
+${secondMessage} - ${thirdMessage}
+
+Answer = ${Number(secondMessage) - Number(thirdMessage)}
+                `);
+            alert(`
+Thanks for using simple Calculator
+
+Want to do more calculations?
+
+RELOAD THE PAGE!!!
+                `);
+          }
+        }
+      } else if (firstMessage === 3) {
+        let secondMessage = prompt(`
+Multiplication
+Enter First Number
+
+
+                    `);
+
+        if (secondMessage) {
+          let thirdMessage = prompt(`
+Enter Second Number:
+${secondMessage} ×
+                        `);
+          if (thirdMessage) {
+            let fourthMessage = alert(`
+${secondMessage} × ${thirdMessage}
+
+Answer = ${Number(secondMessage) * Number(thirdMessage)}
+                `);
+            alert(`
+Thanks for using simple Calculator
+
+Want to do more calculations?
+
+RELOAD THE PAGE!!!
+                `);
+          }
+        }
+      } else if (firstMessage === 4) {
+        let secondMessage = prompt(`
+Divison
+Enter First Number
+
+
+                    `);
+
+        if (secondMessage) {
+          let thirdMessage = prompt(`
+Enter Second Number:
+${secondMessage} ÷
+                        `);
+          if (thirdMessage) {
+            let fourthMessage = alert(`
+${secondMessage} ÷ ${thirdMessage}
+
+Answer = ${Number(secondMessage) / Number(thirdMessage)}
+                `);
+            alert(`
+Thanks for using simple Calculator
+
+Want to do more calculations?
+
+RELOAD THE PAGE!!!
+                `);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
